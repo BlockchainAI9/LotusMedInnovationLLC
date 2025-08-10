@@ -51,16 +51,20 @@ const EnterButton: React.FC<EnterButtonProps> = ({ onClick }) => {
 
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-opacity-40 bg-black">
-      <motion.button
-        className="bg-yellow-500/80 text-white px-6 py-3 rounded-lg text-lg z-40 enter-button"
-        onClick={onClick}
-        initial="initial"
-        animate="animate"
-        variants={buttonVariants}
-        transition={{ duration: 1 }}
-      >
-        THIS IS ENTER BUTTON
-      </motion.button>
+ <motion.button
+  {...({
+    className:
+      "bg-yellow-500/80 text-white px-6 py-3 rounded-lg text-lg z-40 enter-button",
+    onClick,
+    initial: "initial",
+    animate: "animate",
+    variants: buttonVariants,
+    transition: { duration: 1 },
+  } as (React.ButtonHTMLAttributes<HTMLButtonElement> & import("framer-motion").MotionProps))}
+>
+  THIS IS ENTER BUTTON
+</motion.button>
+
       
     </div>
   );
