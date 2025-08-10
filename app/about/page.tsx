@@ -57,7 +57,7 @@ const About = () => {
 
 <Image
         className=" opacity-[15%] z-[1] object-cover"
-        src="/lanewpic.jfif"
+        src="/lanewpic.jpeg"
         fill={true}
         objectFit= "fill" 
         alt="replay intro video"
