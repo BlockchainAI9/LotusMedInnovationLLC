@@ -42,7 +42,7 @@ const Contact = () => {
       >
         {/* Contact Info */}
         <div className="bg-black/40 rounded-xl p-6 text-white w-full max-w-md mx-auto">
-          <h2 className="text-2xl font-light mb-6">Contact Us</h2>
+          <h2 className="text-2xl font-light mb-6">Contact Us form</h2>
           <div className="mb-6">
             <p className="text-lg font-medium">Lotus Med Innovation LLC</p>
           </div>
