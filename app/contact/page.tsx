@@ -122,7 +122,7 @@ const Contact = () => {
       
 
       {/* Contact Form - Far Right Bottom */}
-      <div className="hidden md:block absolute bottom-8 right-8 z-10 w-[min(80vw,400px)]">
+      <div className="hidden md:block absolute bottom-8 right-8 z-10 w-[min(90vw,640px)]">
         {!scriptLoaded ? (
           <Skeleton className="w-full h-[500px] rounded-lg bg-white/10" />
         ) : (
