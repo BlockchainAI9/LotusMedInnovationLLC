@@ -92,3 +92,7 @@ a[href*="elfsight.com/contact-form-widget"] {
 .elfsight-wrapper a[href*="elfsight.com/contact-form-widget"] {
   display: none !important;
 }
+
+.email-contact{
+ color: red; 
+}
