@@ -56,7 +56,7 @@ const Contact = () => {
           </div>
           <div>
             <h3 className="font-light text-sm">Email:</h3>
-            <p className="text-sm no-underline hover:underline">lmiglocapital@gmail.com</p>
+            <p className="text-sm email-contact">lmiglocapital@gmail.com</p>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ const Contact = () => {
               {/* ITEM */}
               <div className="py-2 md:py-1  flex gap-1 justify-center">
                 <h2 className="text-white font-[300] text-[15px]">Email:</h2>
-                <p className="text-[15px] text-[#fff] font-[300] underline">
+                <p className="text-[15px] text-[#fff] font-[300] email-contact">
                   lmiglocapital@gmail.com
                 </p>
               </div>
