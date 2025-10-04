@@ -63,7 +63,7 @@ const Contact = () => {
         {/* Form */}
         <div className="w-full max-w-md mx-auto">
           {!scriptLoaded ? (
-            <Skeleton className="w-full h-[420px] rounded-lg bg-white/10" />
+            <Skeleton className="w-full h-[400px] rounded-lg bg-white/10" />
           ) : (
             <div className="w-full">
               <div className="elfsight-app-5ea2e3a0-1943-4f8d-a113-6b2876a71a66" />
@@ -122,9 +122,9 @@ const Contact = () => {
       
 
       {/* Contact Form - Far Right Bottom */}
-      <div className="hidden md:block absolute bottom-10 right-8 z-10 w-[min(90vw,500px)]">
+      <div className="hidden md:block absolute bottom-10 right-8 z-10 w-[min(80vw,400px)]">
         {!scriptLoaded ? (
-          <Skeleton className="w-full h-[500px] rounded-lg bg-white/10" />
+          <Skeleton className="w-full h-[400px] rounded-lg bg-white/10" />
         ) : (
           <div className="w-full elfsight-wrapper">
             <div className="elfsight-app-5ea2e3a0-1943-4f8d-a113-6b2876a71a66" />
