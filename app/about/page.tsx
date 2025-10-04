@@ -23,12 +23,9 @@ const About = () => {
 
 <h3 className='text-[21px] font-[300] text-white  py-4'>GLOBAL MISSION
 </h3>
-<p className='text-[15px] font-[300] text-white pb-6'>Healthcare Innovation and Entrepreneurship drive the Lotus Med Innovation team of thought leaders. We seek global opportunities with a social impact in ground-breaking advances and cutting-edge technology to enhance Precision Medicine, Food Systems/Nutrition, Preventative Health, Lifestyle, and Wellbeing. We strive to service our clients with innovative finance opportunities that empower the region and the people they touch—a firm determination to create stronger, sustainable businesses through accelerated operational improvement and transformative growth. <br/><br/>Lotus Med Innovation enables its clients to capitalize on the company&apos;s deeply rooted regional ties and highly discrete work ethic in all interactions and services from beginning to end. The industry&apos;s trusted leading global capital alliance partner; aligning private capital for public good.</p>
+<p className='text-[15px] font-[300] text-white pb-6'>Healthcare Innovation and Entrepreneurship drive the Lotus Med Innovation team of thought leaders. We seek global opportunities with a social impact in ground-breaking advances and cutting-edge technology to enhance Personalized and Precision Medicine, Food Systems/Nutrition, Preventative Health, Lifestyle, and Wellbeing. We strive to service our clients with innovative finance opportunities that empower the region and the people they touch—a firm determination to create stronger, sustainable businesses through accelerated operational improvement and transformative growth. <br/><br/>Lotus Med Innovation enables its clients to capitalize on the company&apos;s deeply rooted regional ties and highly discrete work ethic in all interactions and services from beginning to end. The industry&apos;s trusted leading global capital alliance partner; aligning private capital for public good.</p>
 
-   <h3 className='text-[21px] font-[300] text-white  py-4'>Personalized and Precision Medicine
-</h3>
-       <p className='text-[15px] font-[300] text-white pb-6'>We seek global opportunities with a social impact in ground-breaking advances and cutting-edge technology to enhance Precision Medicine</p>
-
+  
       </section>
 
       
