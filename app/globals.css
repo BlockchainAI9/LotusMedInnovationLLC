@@ -96,7 +96,7 @@ body {
   padding-right: 15px !important;
   padding-bottom: 9px !important;
   background: #ffffff !important;
-  color: #191614 !important;
+  color: #191616 !important;
   font-family: var(--font-spectral), serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
@@ -191,7 +191,7 @@ body {
 
 .iti__selected-dial-code {
   margin-left: 9px !important;
-  color: #191614 !important;
+  color: #191616 !important;
   font-family: var(--font-spectral), serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
@@ -215,7 +215,7 @@ body {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 12px 0px !important;
-  color: #191614 !important;
+  color: #191616 !important;
   font-family: var(--font-spectral), serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
@@ -257,7 +257,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: 12px center !important;
   background-size: 15px 15px !important;
-  color: #191614 !important;
+  color: #191616 !important;
   font-family: var(--font-spectral), serif !important;
   font-size: 15px !important;
   line-height: 18px !important;
@@ -303,7 +303,7 @@ body {
   align-items: center !important;
   min-height: 36px !important;
   padding: 9px 9px 9px 15px !important;
-  color: #191614 !important;
+  color: #191616 !important;
   font-family: var(--font-spectral), serif !important;
   font-size: 15px !important;
   line-height: 18px !important;
@@ -314,7 +314,7 @@ body {
   flex: 1 1 auto !important;
   align-items: center !important;
   justify-content: space-between !important;
-  color: #191614 !important;
+  color: #191616 !important;
   font-family: var(--font-spectral), serif !important;
 }
 
