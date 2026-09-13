@@ -111,7 +111,7 @@ const ContactFormFields = ({
           We will reply to you shortly.
         </p>
         <button
-          className="mt-[21px] h-[39px] min-w-[69px] border-none rounded-[3px] bg-[#1e093f] px-[21px] font-spectral text-[15px] leading-[21px] font-bold text-white"
+          className="mt-[21px] h-[39px] min-w-[69px] border-none rounded-[3px] bg-[#1e0945] px-[21px] font-spectral text-[15px] leading-[21px] font-bold text-white"
           type="button"
           onClick={onDismissSuccess}
         >
@@ -194,7 +194,7 @@ const ContactFormFields = ({
           </div>
         ) : (
           <button
-            className="contact-submit-btn mx-auto border-none rounded-[3px] bg-[#1e093f] px-[30px] py-[12px] h-[48px] sm:h-[49px] text-[15px] leading-[21px] font-spectral font-bold text-white transition hover:bg-[#1e093f]/90"
+            className="contact-submit-btn mx-auto border-none rounded-[3px] bg-[#1e0945] px-[30px] py-[12px] h-[48px] sm:h-[49px] text-[15px] leading-[21px] font-spectral font-bold text-white transition hover:bg-[#1e0945]/90"
             style={{ width: 111, minWidth: 111, maxWidth: 111 }}
             type="submit"
           >
