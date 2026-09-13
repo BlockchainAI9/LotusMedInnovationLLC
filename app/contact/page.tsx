@@ -121,7 +121,7 @@ const ContactFormFields = ({
     ) : null}
 
     <div className={showSuccess ? "hidden" : ""}>
-      <h2 className="font-spectral text-[#191614] text-[21px] leading-[27px] font-normal text-center mb-[15px]">
+      <h2 className="text-[#191614] text-[21px] leading-[27px] font-normal text-center mb-[15px]">
         Drop Us a Line!
       </h2>
       <form className="font-spectral space-y-[15px] text-[#191614]" onSubmit={onSubmit}>
@@ -364,8 +364,7 @@ const Contact = () => {
       >
         {/* Contact Info */}
         <div className="bg-black/40 rounded-xl p-6 text-white w-full max-w-md mx-auto">
-          <h2 className="text-2xl font-light mb-6">Contact Us</h2>
-          <div className="mb-6">
+          <div className="mb-6 text-center">
             <p className="text-lg font-medium">Lotus Med Innovation LLC</p>
           </div>
           <div className="mb-4">
