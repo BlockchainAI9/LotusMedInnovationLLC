@@ -106,7 +106,7 @@ const ContactFormFields = ({
   <>
     {showSuccess ? (
       <div className="flex flex-col items-center justify-center text-center my-[21px]">
-        <p className="font-spectral text-[15px] leading-[18px] text-[#191616]">
+        <p className="font-spectral text-[15px] leading-[18px] text-[#1e0945]">
           Your message was successfully sent!
           We will reply to you shortly.
         </p>
@@ -121,10 +121,10 @@ const ContactFormFields = ({
     ) : null}
 
     <div className={showSuccess ? "hidden" : ""}>
-      <h2 className="text-[#191616] text-[21px] leading-[27px] font-normal text-center mb-[15px]">
+      <h2 className="text-[#1e0945] text-[21px] leading-[27px] font-normal text-center mb-[15px]">
         Drop Us a Line!
       </h2>
-      <form className="font-spectral space-y-[15px] text-[#191616]" onSubmit={onSubmit}>
+      <form className="font-spectral space-y-[15px] text-[#1e0945]" onSubmit={onSubmit}>
         <div className={`grid gap-[15px] ${stacked ? "grid-cols-1" : "grid-cols-2"}`}>
           <div>
             <span className="mb-[9px] block text-[15px] leading-[21px] font-normal">First Name</span>
