@@ -9,13 +9,13 @@ import Image from 'next/image';
 const About = () => {
  
   return (
-    <section className='h-full w-full overflow-x-hidden overflow-y-hidden '>
+    <section className='h-full w-full overflow-x-hidden overflow-y-hidden max-md:relative'>
     {/* NAVBAR */}
     <Navbar />
 
 
     {/* <LogoAbout /> */}
-    <ScrollArea id="container" className='w-full h-screen pt-48 md:py-76 z-[2] px-5 lg:px-72 xl:px-[26rem] 2xl:px-[36rem]'>
+    <ScrollArea id="container" className='w-full h-screen pt-24 sm:pt-48 md:py-76 z-[2] px-5 lg:px-72 xl:px-[26rem] 2xl:px-[36rem]'>
       {/* CONTENT 1 */}
       <section className=' max-h-[300px] pb-7 '>
       <h3 className='text-[21px] font-[300] text-white  py-4'>ABOUT US</h3>
@@ -35,41 +35,26 @@ const About = () => {
     
       
     
-    {/* BG */}
-    <div className="w-full h-screen">
+    <div className="absolute inset-0 -z-10 md:hidden">
+      <Image
+        className="object-cover opacity-[15%]"
+        src="/lanewpic.jpeg"
+        fill
+        priority
+        quality={95}
+        sizes="100vw"
+        alt=""
+      />
+    </div>
 
-        {/* BACKGROUND GIF */}
-        {/* <Image
-        className=" opacity-[18%] z-[1] object-cover"
-        src="/la.jpg"
-        fill={true}
-        objectFit= "fill" 
-        alt="replay intro video"
-      /> */}
-
-{/* <Image
-        className=" opacity-[18%] z-[1] object-cover"
-        src="/ad1.jpeg"
-        fill={true}
-        objectFit= "fill" 
-        alt="replay intro video"
-      /> */}
-
-<Image
+    <div className="hidden md:block w-full h-screen">
+      <Image
         className=" opacity-[15%] z-[1] object-cover"
         src="/lanewpic.jpeg"
         fill={true}
-        objectFit= "fill" 
+        objectFit= "fill"
         alt="replay intro video"
       />
-
-{/* <Image
-        className=" opacity-[18%] z-[1] object-cover"
-        src="/ad3.jpg"
-        fill={true}
-        objectFit= "fill" 
-        alt="replay intro video"
-      /> */}
     </div>
 
   </section>

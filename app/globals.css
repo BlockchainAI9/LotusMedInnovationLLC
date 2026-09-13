@@ -1,75 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
- 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
- 
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
- 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
- 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
- 
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
- 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
- 
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
- 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
- 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
- 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
- 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
- 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
- 
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
- 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
- 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
-}
- 
-@layer base {
+
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -79,22 +61,291 @@ body {
   background-color: #000;
   height: 100vh;
   color: white;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
+.font-spectral {
+  font-family: var(--font-spectral), serif;
+}
 
-/* Hide Elfsight branding badge */
-a[href*="elfsight.com/contact-form-widget"] {
+.iti {
+  --iti-hover-color: #19161414;
+  --iti-border-color: transparent;
+  --iti-country-selector-bg: #ffffff;
+  --iti-icon-color: #191614;
+  --iti-flag-width: 24px;
+  --iti-globe-icon-size: 15px;
+  --iti-clear-icon-size: 15px;
+  --iti-spacer-horizontal: 9px;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  z-index: 60 !important;
+  font-family: var(--font-spectral), serif !important;
+}
+
+.iti .phone-input-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 42px !important;
+  border: 1px solid #191614 !important;
+  border-radius: 30px !important;
+  padding-top: 9px !important;
+  padding-left: 81px !important;
+  padding-right: 15px !important;
+  padding-bottom: 9px !important;
+  background: #ffffff !important;
+  color: #191614 !important;
+  font-family: var(--font-spectral), serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+  outline: none !important;
+}
+
+.iti .phone-input-wrapper::placeholder {
+  color: #363636 !important;
+  font-family: var(--font-spectral), serif !important;
+}
+
+.iti .phone-input-wrapper:focus {
+  border-color: #330f63 !important;
+  box-shadow: none !important;
+}
+
+.iti .phone-input-wrapper.phone-input-error,
+.iti .phone-input-wrapper.phone-input-error:focus {
+  border-color: #ff3939 !important;
+}
+
+.contact-submit-btn {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 111px !important;
+  min-width: 111px !important;
+  max-width: 111px !important;
+  flex-shrink: 0 !important;
+}
+
+.contact-submit-loader {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  border: 3px solid #1e093f;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: contact-spin 0.7s linear infinite;
+}
+
+@keyframes contact-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.iti__country-container {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+  padding: 0 !important;
+  pointer-events: none;
+  overflow: visible !important;
+}
+
+.iti__selected-country,
+.iti__country-selector {
+  pointer-events: auto;
+}
+
+.iti__selected-country {
+  width: max-content !important;
+  height: 42px !important;
+  padding: 0px 0px 0px 6px !important;
+  background: transparent !important;
+}
+
+.iti__selected-country-primary,
+.iti__selected-country-primary:hover,
+.iti__selected-country[aria-expanded="true"] .iti__selected-country-primary,
+.iti--has-country-selector .iti__selected-country-primary:hover,
+.iti--has-country-selector .iti__selected-country[aria-expanded="true"] .iti__selected-country-primary {
+  width: auto !important;
+  height: 100% !important;
+  padding: 0px 0px 0px 6px !important;
+  margin: 0px !important;
+  border-radius: 0 !important;
+  background: transparent !important; 
+   background-color: transparent !important;
+}
+
+/* .iti__selected-country-primary:hover{
+  background: red !important;
+} */
+
+.iti__selected-country-primary .iti__flag {
+  --iti-flag-width: 21px;
+}
+
+.iti__selected-dial-code {
+  margin-left: 9px !important;
+  color: #191614 !important;
+  font-family: var(--font-spectral), serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+}
+
+.iti__country-selector {
+  box-sizing: border-box !important;
+  position: fixed !important;
+  right: 33px !important;
+  left: auto !important;
+  bottom: 0px !important;
+  z-index: 80 !important;
+  width: 270px !important;
+  min-width: 270px !important;
+  height: auto !important;
+  max-width: 270px !important;
+  max-height: 345px !important;
+  border: 0 !important;
+  border-radius: 30px !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 12px 0px !important;
+  color: #191614 !important;
+  font-family: var(--font-spectral), serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 18px !important;
+}
+
+.iti--flexible-dropdown-width .iti__country-list {
+  white-space: normal !important;
+}
+
+.iti__search-input-wrapper {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin: 0 0 3px !important;
+  padding: 15px !important;
+  border-bottom: 1px solid #1916141a !important;
+  background: #ffffff !important;
+}
+
+.iti__search-icon,
+.iti__search-icon-svg {
   display: none !important;
 }
 
+.iti__search-clear {
+  right: 21px !important;
+}
 
+.iti__search-input {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 39px !important;
+  margin: 0 !important;
+  padding: 9px 33px 9px 36px !important;
+  border: 1px solid #191614 !important;
+  border-radius: 30px !important;
+  background-color: #ffffff !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23191614' fill-rule='evenodd' d='M7.333 1.4a5.933 5.933 0 0 1 4.6 9.683l2.491 2.493a.6.6 0 0 1-.765.918l-.083-.07-2.493-2.492A5.933 5.933 0 1 1 7.333 1.4Zm0 1.2a4.733 4.733 0 1 0 3.303 8.124.259.259 0 0 1 .04-.048l.048-.04A4.733 4.733 0 0 0 7.334 2.6Z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: 12px center !important;
+  background-size: 15px 15px !important;
+  color: #191614 !important;
+  font-family: var(--font-spectral), serif !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  outline: none !important;
+}
+
+.iti__search-input::placeholder {
+  color: #363636 !important;
+  font-family: var(--font-spectral), serif !important;
+}
+
+.iti__search-input:focus {
+  border-color: #330f63 !important;
+}
+
+.iti__country-list {
+  max-height: 252px !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #9c9c9c transparent !important;
+  padding-bottom: 9px !important; 
+}
+
+.iti__country-list::-webkit-scrollbar {
+  width: 1px !important;
+  display: none !important;
+}
+
+.iti__country-list::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.iti__country-list::-webkit-scrollbar-thumb {
+  background: #ffffff50 !important;
+  border: 1px solid #ffffff !important;
+  width: 1px !important;
+  border-radius: 30px !important;
+}
+
+.iti__country {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 36px !important;
+  padding: 9px 9px 9px 15px !important;
+  color: #191614 !important;
+  font-family: var(--font-spectral), serif !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+}
+
+.iti__country-name {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  color: #191614 !important;
+  font-family: var(--font-spectral), serif !important;
+}
+
+.iti__dial-code {
+  margin-left: 3px !important;
+  color: #363636 !important;
+  font-family: var(--font-spectral), serif !important;
+}
+
+.iti__country-check {
+  display: none !important;
+}
+
+.iti__no-results {
+  padding: 15px !important;
+  color: #363636 !important;
+  font-family: var(--font-spectral), serif !important;
+  font-size: 15px !important;
+  text-align: center !important;
+}
+
+a[href*="elfsight.com/contact-form-widget"],
 .elfsight-wrapper a[href*="elfsight.com/contact-form-widget"] {
   display: none !important;
 }
-.jqwFGU , .eUJcSt {
- opacity: 0.7;
+
+.jqwFGU,
+.eUJcSt {
+  opacity: 0.7;
 }
-.bHCqKJ{
- padding: 10px 20px !important;
+
+.bHCqKJ {
+  padding: 10px 20px !important;
 }
