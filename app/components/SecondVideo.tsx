@@ -7,7 +7,11 @@ interface SecondVideoProps {
 const SecondVideo: React.FC<SecondVideoProps> = ({ onVideoEnd }) => {
   return (
     <div className="video-container bg-black">
-      <video autoPlay className="w-screen h-screen object-cover" onEnded={onVideoEnd}>
+      <video
+        autoPlay
+        className="w-screen h-screen object-cover [@media(orientation:portrait)_and_(max-width:767px)]:object-contain"
+        onEnded={onVideoEnd}
+      >
         <source src="/second.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
