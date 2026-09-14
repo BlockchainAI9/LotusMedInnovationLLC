@@ -344,7 +344,7 @@ const Contact = () => {
   return (
     <section className="relative min-h-screen w-full">
       {/* Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 max-lg:fixed">
         <Image
           src="/mumbai.jpg"
           alt="Contact background"
@@ -359,7 +359,7 @@ const Contact = () => {
 
       {/* ===== Mobile (stacked) ===== */}
       <div
-        className="relative z-10 md:hidden px-4 pt-28 pb-8 space-y-4"
+        className="relative z-10 lg:hidden px-4 pt-28 pb-8 space-y-4"
         style={{ paddingBottom: "max(2rem, env(safe-area-inset-bottom))" }}
       >
         {/* Contact Info */}
@@ -398,7 +398,7 @@ const Contact = () => {
 
       {/* ===== Desktop / Tablet (positioned) ===== */}
       {/* Contact Info - Far Left Center */}
-      <div className="hidden md:block absolute bottom-40 left-6  z-10">
+      <div className="hidden lg:block absolute bottom-40 left-6  z-10">
         <div className="w-full flex-col items-center text-center z-10 ">
           {/* ITEM */}
           <div className="py-2 md:py-4">
@@ -426,7 +426,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Form - Far Right Bottom */}
-      <div className="hidden md:block absolute bottom-6 right-[33px] z-10 w-[min(80vw,441px)] overflow-visible">
+      <div className="hidden lg:block absolute bottom-6 right-[33px] z-10 w-[min(80vw,441px)] overflow-visible">
         <div className="relative w-full overflow-hidden bg-white rounded-[24px] py-[39px] px-[45px]">
           <ContactFormFields
             phoneInputRef={desktopPhoneInputRef}
@@ -436,7 +436,7 @@ const Contact = () => {
       </div>
 
       {/* Footer */}
-      <div className="hidden md:block absolute bottom-2 left-1/2 -translate-x-1/2 text-center text-white text-xs z-10">
+      <div className="hidden lg:block absolute bottom-2 left-1/2 -translate-x-1/2 text-center text-white text-xs z-10">
         © {new Date().getFullYear()} Lotus Med Innovation LLC. <br /> All Rights Reserved.
       </div>
     </section>
