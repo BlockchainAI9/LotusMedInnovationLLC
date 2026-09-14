@@ -35,7 +35,7 @@ const page = () => {
           alt=""
           fill
           priority
-          className="hidden object-cover object-[center_0%] w-full h-full translate-y-8 [@media(orientation:landscape)_and_(max-width:1180px)]:block min-[1181px]:!hidden"
+          className="hidden object-cover object-[70%_38%] w-full h-full [@media(orientation:landscape)_and_(max-width:1180px)]:block min-[1181px]:!hidden"
           sizes="100vw"
           aria-hidden
         />
