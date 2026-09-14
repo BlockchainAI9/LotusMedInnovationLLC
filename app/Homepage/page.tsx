@@ -18,8 +18,26 @@ const page = () => {
           alt="homepage background image"
           fill
           priority
-          className="object-cover w-full h-full"
+          className="hidden min-[1181px]:block object-cover object-center w-full h-full"
           sizes="100vw"
+        />
+        <Image
+          src="/nycpic.jpeg"
+          alt=""
+          fill
+          priority
+          className="object-cover object-[72%_62%] w-full h-full min-[1181px]:hidden [@media(orientation:landscape)_and_(max-width:1180px)]:hidden"
+          sizes="100vw"
+          aria-hidden
+        />
+        <Image
+          src="/nycpic.jpeg"
+          alt=""
+          fill
+          priority
+          className="hidden object-cover object-[center_0%] w-full h-full translate-y-8 [@media(orientation:landscape)_and_(max-width:1180px)]:block min-[1181px]:!hidden"
+          sizes="100vw"
+          aria-hidden
         />
         {/* Optionally add a dark overlay for better contrast */}
         {/* <div className="absolute inset-0 bg-black/30" /> */}

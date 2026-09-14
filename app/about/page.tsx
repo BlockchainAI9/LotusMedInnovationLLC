@@ -15,7 +15,7 @@ const About = () => {
 
 
       {/* <LogoAbout /> */}
-      <ScrollArea id="container" className='w-full h-screen pt-24 lg:pt-48 xl:py-76 z-[2] px-5 lg:px-72 xl:px-[26rem] 2xl:px-[36rem]'>
+      <ScrollArea id="container" className='w-full h-screen pt-24 lg:pt-48 xl:py-76 z-[2] px-5 landscape:max-lg:pl-12 lg:px-72 xl:px-[26rem] 2xl:px-[36rem]'>
         {/* CONTENT 1 */}
         <section className=' max-h-[300px] pb-7 '>
           <h3 className='text-[21px] font-[300] text-white  py-4'>ABOUT US</h3>

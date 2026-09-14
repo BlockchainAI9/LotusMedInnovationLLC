@@ -89,32 +89,32 @@ const Navbar = () => {
       />
 
       <div
-        className={`fixed top-[80px] left-0 right-0 z-20 bg-white md:hidden shadow-lg transition-transform ${menuOpen ? "translate-y-0" : "pointer-events-none -translate-y-3 opacity-0"}`}
+        className={`fixed top-[80px] left-0 right-0 z-20 bg-white md:hidden shadow-lg transition-transform max-h-[calc(100dvh-80px)] overflow-y-auto overscroll-contain ${menuOpen ? "translate-y-0" : "pointer-events-none -translate-y-3 opacity-0"}`}
       >
-        <ul className="flex flex-col px-6 py-4 text-[16px] tracking-widest text-[#2C0836] uppercase">
+        <ul className="flex flex-col px-6 py-4 text-[16px] tracking-widest text-[#2C0836] uppercase landscape:px-12 landscape:py-2">
           <Link
-            className="border-b border-[#2C0836]/10 py-4 hover:text-[#2A0A5B] hover:font-bold"
+            className="border-b border-[#2C0836]/10 py-4 hover:text-[#2A0A5B] hover:font-bold landscape:py-2.5"
             href="/Homepage"
             onClick={() => setMenuOpen(false)}
           >
             Home
           </Link>
           <Link
-            className="border-b border-[#2C0836]/10 py-4 hover:text-[#2A0A5B] hover:font-bold"
+            className="border-b border-[#2C0836]/10 py-4 hover:text-[#2A0A5B] hover:font-bold landscape:py-2.5"
             href="/about"
             onClick={() => setMenuOpen(false)}
           >
             About
           </Link>
           <Link
-            className="border-b border-[#2C0836]/10 py-4 hover:text-[#2A0A5B] hover:font-bold"
+            className="border-b border-[#2C0836]/10 py-4 hover:text-[#2A0A5B] hover:font-bold landscape:py-2.5"
             href="/contact"
             onClick={() => setMenuOpen(false)}
           >
             Contact
           </Link>
           <Link
-            className="flex items-center gap-3 py-4 hover:text-[#2A0A5B]"
+            className="flex items-center gap-3 py-4 hover:text-[#2A0A5B] landscape:py-2.5"
             href="/"
             onClick={() => setMenuOpen(false)}
           >
